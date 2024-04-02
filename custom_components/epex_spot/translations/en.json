@@ -25,6 +25,7 @@
         "data": {
           "percentage_surcharge": "Percentage Surcharge (%)",
           "absolute_surcharge": "Absolute Surcharge (ct/kWh)",
+          "absolute_netcosts": "Absolute Netcosts (ct/kWh, normally Usage- and loss fee of Network level 7)",
           "tax": "Tax (%)"
         },
         "data_description": {
