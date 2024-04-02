@@ -13,6 +13,7 @@ ATTR_RANK = "rank"
 ATTR_QUANTILE = "quantile"
 ATTR_PRICE_EUR_PER_MWH = "price_eur_per_mwh"
 ATTR_PRICE_CT_PER_KWH = "price_ct_per_kwh"
+ATTR_PRICE_CT_PER_KWH_INCL_NETCOSTS = "price_ct_per_kwh_incl_netcosts"
 ATTR_PRICE_GBP_PER_MWH = "price_gbp_per_mwh"
 ATTR_PRICE_PENCE_PER_KWH = "price_pence_per_kwh"
 
