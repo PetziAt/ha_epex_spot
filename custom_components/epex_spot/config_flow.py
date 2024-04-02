@@ -20,6 +20,8 @@ from .const import (
     DEFAULT_SURCHARGE_PERC,
     DEFAULT_TAX,
     DOMAIN,
+    CONF_NETCOSTS,
+    DEFAULT_CONF_NETCOSTS,
 )
 from .EPEXSpot import SMARD, Awattar, EPEXSpotWeb, smartENERGY
 
@@ -127,6 +129,11 @@ class EpexSpotOptionsFlow(config_entries.OptionsFlow):
                             CONF_SURCHARGE_ABS, DEFAULT_SURCHARGE_ABS
                         ),
                     ): vol.Coerce(float),
+                    vol.Optional(
+                        CONF_NETCOSTS,
+                        default=self.config_entry.options.get(
+                            CONF_NETCOSTS, DEFAULT_CONF_NETCOSTS
+                        ),
                     vol.Optional(
                         CONF_TAX,
                         default=self.config_entry.options.get(CONF_TAX, DEFAULT_TAX),
